@@ -8,31 +8,31 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-API_KEY = '5a08a70ed4abd9a0f46a349d0cd08625'
-PASSWORD = 'f725a802b54e8fc016ffc68af6a4a701'
-SHOP_NAME = 'nerdempire00'
+API_KEY = 'key'
+PASSWORD = 'PASSOWRD'
+SHOP_NAME = 'SHOP NAME'
 page = range(1, 2)
 
 
 #product_ids = get_all_resources(shopify.Product, fields="id")
 
-# order = requests.get( "https://nerdempire00.myshopify.com/admin/orders/count.json",
+# order = requests.get( "https://SHOPNAME.myshopify.com/admin/orders/count.json",
 #                              auth=(API_KEY,PASSWORD))
 
-product = requests.get( "https://nerdempire00.myshopify.com/admin/products/count.json",
+product = requests.get( "https://SHOPNAME.myshopify.com/admin/products/count.json",
                              auth=(API_KEY,PASSWORD))
 '''
 connection = pymysql.connect(host='localhost',
-                             user='root',
-                             password='root',
-                             db='test',
+                             user='USER',
+                             password='PASSWORD',
+                             db='TEST',
                              charset='utf8mb4',
                              cursorclass=pymysql.cursors.DictCursor)
 
 c = 0
 
 for c in page:
-    product_list = requests.get("https://nerdempire00.myshopify.com/admin/products.json?limit=250&page=" + str(c),
+    product_list = requests.get("https://SHOPNAME.myshopify.com/admin/products.json?limit=250&page=" + str(c),
                                 auth=(API_KEY, PASSWORD))
     print c
     for p in product_list.json()['products']:

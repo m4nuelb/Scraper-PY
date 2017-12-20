@@ -1,3 +1,3 @@
 # Scraper-PY
 
-little scraper for scrap ecommerce website
+little scraper for scrap ecommerce website integrated with Shopify ecommerce

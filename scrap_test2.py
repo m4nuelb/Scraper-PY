@@ -3,8 +3,8 @@ import bs4
 import requests
 
 # specify the url
-quote_page = ["https://www.dragonstore.it/default.asp?cmd=search&cmdFilter=1|CONSIGLIATI&orderBy=webGroupOrder&pg=1",
-              "https://www.dragonstore.it/default.asp?cmd=search&cmdFilter=1|CONSIGLIATI&orderBy=webGroupOrder&pg=2"]
+quote_page = ["WEBSITE 1",
+              "WEBSITE 2"]
 sorgente = requests.get(quote_page).text
 
 soup = bs4.BeautifulSoup(sorgente, "lxml")
